@@ -51,7 +51,7 @@ async function main() {
   checkOldConfig();
 
   const token = env("GITHUB_TOKEN");
-  const baseUrl = env("GITHUB_SERVER_URL")
+  const baseUrl = env("GITHUB_SERVER_URL");
   const octokit = new Octokit({
     auth: `token ${token}`,
     baseUrl: `${baseUrl}/api/v3`,
